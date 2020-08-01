@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Search from './components/Search';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+//import Navbar2 from './components/Navbar2';
+//import CustomizedMenus from './components/demo';
+//import Navbar2 from './components/Navbar2';
+//import ButtonAppBar from './components/demo';
+import PrimarySearchAppBar from './components/demo';
+
+//import NewApp from './NewApp';
 
 function App() {
   return (
+    
+    <MuiThemeProvider> 
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <PrimarySearchAppBar/>
+    
+    <Search/>
     </div>
+    </MuiThemeProvider>
   );
 }
 
 export default App;
+ 
