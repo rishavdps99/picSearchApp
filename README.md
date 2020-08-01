@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This purpose of this project was to work with an external API. I have used the pixabay API for fetching images.
 
 ## Available Scripts
 
